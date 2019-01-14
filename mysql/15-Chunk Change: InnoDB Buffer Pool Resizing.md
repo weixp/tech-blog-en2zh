@@ -35,7 +35,7 @@ The buffer pool can hold several instances and each instance is divided into chu
 >on systems where the database size is smaller than available RAM
 if you expect a huge growth and want to increase the buffer pool on demand
 
-##缩小buffer pool
+## 缩小buffer pool
 让我们开始减小buffer pool
 >Reducing the buffer pool
 
@@ -79,7 +79,7 @@ mysql> show warnings;
 1 row in set (0.00 sec)
 ```
 
-##增加buffer pool
+## 增加buffer pool
 
 >Increasing the buffer pool
 
@@ -122,9 +122,9 @@ mysql> show global variables like 'innodb_buffer_pool_%size' ;
 2 rows in set (0.01 sec)
 ```
 
-##有趣的情景
+## 有趣的情景
 增加配置文件当中的值
-##Interesting scenarios
+## Interesting scenarios
 Increasing size in the config file
 
 假如有一天，你突然想优化mysql的一些参数。由于服务器还有空闲内存，你想增加buffer pool的大小。在这个例子当中，我们将会在一台16个innodb\_buffer\_pool\_instances，2GB buffer pool的mysql上面做实验。我们会把buffer pool的大小增加到2.5GB。
